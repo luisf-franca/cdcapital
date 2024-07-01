@@ -123,6 +123,216 @@ header {
   }
 }
 
+#nossos-servicos {
+  height: 100vh;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+
+  div {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 24rem;
+
+    span {
+      color: #b8d3ef;
+    }
+  }
+
+  picture {
+    margin: auto;
+    position: relative;
+    width: 585px;
+    height: 390px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 6px;
+    }
+
+    &::after {
+      content: '';
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      background: linear-gradient(rgba(0, 0, 0, 0.0001) 16.67%, #14161d 90%);
+    }
+  }
+}
+
+#timeline {
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 2rem 0;
+
+  &&::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 83%;
+    background: #b8d3ef;
+  }
+
+  > div {
+    display: flex;
+    align-items: flex-start;
+    max-width: 20rem;
+    min-height: 12rem;
+    padding-inline: 2rem;
+
+    &:nth-child(1) {
+      grid-row: 1;
+      text-align: left;
+      grid-column: 2;
+      justify-self: start;
+    }
+
+    &:nth-child(2) {
+      grid-row: 2;
+      text-align: right;
+      grid-column: 1;
+      justify-self: end;
+    }
+
+    &:nth-child(3) {
+      grid-row: 3;
+      text-align: left;
+      grid-column: 2;
+      justify-self: start;
+    }
+
+    &:nth-child(4) {
+      grid-row: 4;
+      text-align: right;
+      grid-column: 1;
+      justify-self: end;
+    }
+
+    &:nth-child(5) {
+      grid-row: 5;
+      text-align: left;
+      grid-column: 2;
+      justify-self: start;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    & img {
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      position: absolute;
+      background: #14161d;
+      width: 2.5rem;
+    }
+  }
+}
+
+#faq {
+  min-height: 100vh;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  flex-direction: row;
+  align-items: center;
+
+  div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    max-width: 24rem;
+    gap: 1.5rem;
+  }
+
+  div:nth-child(2) {
+    background: #212532;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 42rem;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    details > summary {
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #3e4762;
+      list-style: none;
+      cursor: pointer;
+      position: relative;
+      transition: padding-bottom 0.3s ease;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::before {
+        content: url('../assets/icons/Arrow.svg');
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(0deg);
+        transition: transform 0.3s ease;
+      }
+    }
+
+    details[open] > summary::before {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    p {
+      padding-block: 1rem;
+      max-width: 80%;
+    }
+  }
+}
+
+#entre-contato {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  background-image: url(assets/my-team-working-very-well.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: end;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      11.1deg,
+      #14161d 1.24%,
+      rgba(20, 22, 29, 0.192157) 61.3%
+    );
+  }
+
+  button {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+  }
+}
+
 .container {
   margin: auto;
   max-width: 1280px;
