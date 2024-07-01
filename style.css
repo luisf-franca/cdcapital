@@ -312,6 +312,7 @@ header {
   background-image: url(assets/my-team-working-very-well.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
   justify-content: end;
 
   &::before {
@@ -326,10 +327,44 @@ header {
     );
   }
 
-  button {
+  div {
     display: flex;
-    gap: 0.625rem;
-    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 26rem;
+    padding: 4rem 5rem;
+    z-index: 1;
+
+    h2 {
+      color: #fff;
+    }
+
+    span {
+      color: #b8d3ef;
+    }
+
+    button {
+      display: flex;
+      gap: 0.625rem;
+      align-items: center;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 540px;
+
+  p {
+    padding: 4rem;
+    text-align: center;
+    justify-self: flex-end;
+  }
+
+  img {
+    margin: auto;
+    height: 120px;
   }
 }
 
