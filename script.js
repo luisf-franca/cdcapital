@@ -1,7 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelectorAll('details').forEach(function (details) {
-    details.querySelector('summary').addEventListener('click', function () {
-      details.classList.toggle('open');
+  const detailsElements = document.querySelectorAll('details');
+
+  detailsElements.forEach((details) => {
+    details.addEventListener('toggle', function () {
+      if (this.open) {
+        detailsElements.forEach((otherDetails) => {
+          if (otherDetails !== details && otherDetails.open) {
+            otherDetails.open = false;
+          }
+        });
+      }
     });
   });
 });
