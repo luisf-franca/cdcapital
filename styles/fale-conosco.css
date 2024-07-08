@@ -1,0 +1,64 @@
+#fale-conosco {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  article {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    background-image: url(../assets/my-team-working-very-well.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    display: flex;
+    align-items: end;
+
+    &::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        11.1deg,
+        #14161d 1.24%,
+        rgba(20, 22, 29, 0.192157) 61.3%
+      );
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-width: 26rem;
+      padding: 4rem 5rem;
+      z-index: 1;
+
+      h2 {
+        color: #fff;
+      }
+
+      span {
+        color: #b8d3ef;
+      }
+
+      button {
+        display: flex;
+        gap: 0.625rem;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #fale-conosco > article {
+    background-position: center;
+
+    div {
+      padding: 1rem;
+    }
+  }
+}

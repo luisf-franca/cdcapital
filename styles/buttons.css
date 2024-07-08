@@ -1,0 +1,42 @@
+.btn1 {
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 6px;
+  color: #fff;
+  background: linear-gradient(97.35deg, #7090b2 8.99%, #537fac 83.39%);
+  height: max-content;
+  width: max-content;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+}
+
+.btn2 {
+  cursor: pointer;
+  padding: 10px 24px;
+  border-radius: 6px;
+  color: #b9d4ef;
+  border: 1px solid #b9d4ef;
+  height: max-content;
+  width: max-content;
+  transition: all 0.3s ease-out;
+
+  &:hover {
+    color: #151c2f;
+    background: #b9d4ef;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn1 {
+    font-size: 0.75rem;
+    padding: 6px 6px;
+  }
+
+  .btn2 {
+    font-size: 0.75rem;
+    padding: 6px 6px;
+  }
+}
