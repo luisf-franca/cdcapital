@@ -1,11 +1,11 @@
 #initial {
   position: relative;
-  height: 100vh;
+  height: 100svh;
+  width: 100%;
   align-content: end;
 
-  background-image: url(../assets/person-presenting-their-job-resignation.jpeg);
+  background: url('../assets/home-desktop.webp') no-repeat top center;
   background-size: cover;
-  background-repeat: no-repeat;
 
   &::after {
     content: '';
@@ -14,31 +14,37 @@
     height: 100%;
     width: 100%;
     background: linear-gradient(
-      358.96deg,
-      #14161d 4.3%,
-      rgba(20, 22, 29, 0.192157) 48.18%
+      360deg,
+      #14161d 4%,
+      rgba(20, 22, 29, 0.2) 50%
     );
+    z-index: 0;
   }
 
-  > div {
+  & > div {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
-    padding: 0 0 68px 5rem;
-    max-width: 576px;
+    padding-bottom: 4rem;
+    
+    & > h1 {
+      font-weight: 400;
+      font-size: 4.75rem;
+      line-height: 76px;
+      color: var(--branco);
 
-    h1 {
+      max-width: 36rem;
       z-index: 1;
     }
 
-    div {
-      z-index: 1;
+    & > div {
       display: flex;
       gap: 1.5rem;
+      z-index: 1;
     }
   }
 
-  p {
+  & > span {
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -46,14 +52,15 @@
 
     display: flex;
     gap: 0.625rem;
-    padding: 10px;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
 
     font-weight: 700;
     font-size: 0.875rem;
 
     &:nth-of-type(1) {
-      top: 55%;
-      left: 50%;
+      top: 50%;
+      left: 48%;
 
       color: #151c2f;
       background: #b8d3ef;
@@ -61,8 +68,8 @@
     }
 
     &:nth-of-type(2) {
-      top: 20%;
-      left: 20%;
+      top: 30%;
+      left: 14%;
 
       color: #fff;
       background: #151c2f;
@@ -71,43 +78,49 @@
   }
 }
 
-/* #region --- RESPONSIVIDADE */
 @media (max-width: 1280px) {
   #initial > div {
-    gap: 2rem;
-    padding: 0 0 40px 2rem;
+    padding-bottom: 2rem;
+  }
 
-    div {
-      gap: 1.5rem;
+  #initial > span {
+    &:nth-of-type(2) {
+      left: 7%;
     }
   }
 }
 
 @media (max-width: 1024px) {
   #initial > div {
-    gap: 2rem;
-    padding: 0 0 40px 2rem;
-    max-width: 360px;
+    gap: 1.5rem;
+
+    & h1 {
+      font-size: 3.5rem;
+      line-height: 56px;
+    }
+  }
+
+  #initial > span {
+    &:nth-of-type(1) {
+      top: 40%;
+      left: 48%;
+    }
+
+    &:nth-of-type(2) {
+      top: 20%;
+      left: 40%;
+    }
   }
 }
 
 @media (max-width: 768px) {
-  #initial {
-    background-position: center;
+  #inicial {
+    background-image: url('../assets/home-mobile.webp');
+  }
 
-    div {
-      gap: 1rem;
-      max-width: 300px;
-    }
-    p {
-      &:nth-of-type(1) {
-        display: none;
-      }
-
-      &:nth-of-type(2) {
-        display: none;
-      }
+  #initial > span {
+    &:nth-of-type(2) {
+      top: 30%;
     }
   }
 }
-/* #endregion */

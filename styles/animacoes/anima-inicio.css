@@ -1,0 +1,31 @@
+[data-inicio="a"] {
+    opacity: 0;
+    animation: animaInicio 0.8s 0.9s forwards ease-out;
+}
+
+[data-inicio="b"] {
+    opacity: 0;
+    animation: animaInicio 0.7s 1.2s forwards ease-out;
+}
+
+[data-inicio="c"] {
+    opacity: 0;
+    animation: animaInicio 0.7s 2.2s forwards ease-out;
+}
+
+[data-inicio="d"] {
+    opacity: 0;
+    animation: animaInicio 0.7s 2.4s forwards ease-out;
+}
+
+@keyframes animaInicio {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

@@ -1,0 +1,17 @@
+/* GLOBAL */
+@import url('./styles/global.css');
+@import url('./styles/container.css');
+@import url('./styles/buttons.css');
+@import url('./styles/header-footer.css');
+
+/* SECTIONS */
+@import url('./styles/initial.css');
+@import url('./styles/quem-somos.css');
+@import url('./styles/servicos.css');
+@import url('./styles/timeline.css');
+@import url('./styles/faq.css');
+@import url('./styles/fale-conosco.css');
+
+/* ANIMAÇÕES */
+@import url("./styles/animacoes/anima-scroll.css");
+@import url("./styles/animacoes/anima-inicio.css");

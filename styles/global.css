@@ -1,126 +1,42 @@
-@import url('initial.css');
-@import url('quem-somos.css');
-@import url('servicos.css');
-@import url('timeline.css');
-@import url('faq.css');
-@import url('fale-conosco.css');
-@import url('container.css');
-@import url('buttons.css');
+/* FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
 
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-
-  padding-block: 0.25rem;
-  background: #14161d99;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-
-  nav {
-    display: flex;
-    padding-inline: 5rem;
-    justify-content: space-between;
-    align-items: center;
-
-    a > img {
-      transition: all 0.1s ease-out;
-      &:hover {
-        filter: brightness(110%);
-      }
-    }
-
-    ul {
-      display: flex;
-      gap: 3rem;
-
-      a {
-        transition: all 0.1s ease-out;
-
-        &:hover {
-          color: #b9d4ef;
-        }
-      }
-    }
-  }
+@font-face {
+  font-family: 'Aeonik';
+  src: url('/assets/fonts/Aeonik_Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  height: 540px;
-
-  p {
-    padding: 4rem;
-    text-align: center;
-    justify-self: flex-end;
-  }
-
-  img {
-    margin: auto;
-    height: 120px;
-  }
+@font-face {
+font-family: 'Aeonik';
+src: url('/assets/fonts/Aeonik_Regular.ttf') format('truetype');
+font-weight: 400;
+font-style: normal;
 }
+
+@font-face {
+font-family: 'Aeonik';
+src: url('/assets/fonts/Aeonik_Bold.ttf') format('truetype');
+font-weight: 700;
+font-style: normal;
+}
+
+/* CORES */
+
+:root {
+  --branco: #ffffff;
+  --azul-200: #cedbe9;
+  --azul-500: #537FAC;
+  --azul-900: #14161d;
+}
+
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #14161d;
-  margin: 0px;
-}
-
-h1 {
-  margin: 0;
-  line-height: 76px;
-  font-family: 'Amiko', sans-serif;
-  font-weight: 400;
-  font-size: 4.75rem;
-  font-style: normal;
-  color: #f6f6f6;
-}
-
-h2 {
-  margin: 0;
-  font-family: 'Amiko', sans-serif;
-  font-weight: 400;
-  font-size: 2.5rem;
-  font-style: normal;
-  color: #b8d3ef;
-}
-
-h3 {
-  margin: 0;
-  font-family: 'Amiko', sans-serif;
-  font-weight: 700;
-  font-size: 1.4rem;
-  color: #fff;
-}
-
-p,
-a {
-  margin: 0;
-  font-family: 'Amiko', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  text-decoration: none;
-  font-size: 1rem;
-  color: #fff;
-  line-height: 19.2px;
-}
-
-li {
-  margin: 0;
-  font-family: 'Amiko', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  list-style-type: none;
-  font-size: 0.875rem;
-  color: #f6f6f6;
-}
-
+*,
 button {
   margin: 0;
   padding: 0;
@@ -131,137 +47,59 @@ button {
   border: none;
   color: inherit;
   background: none;
+
+  font-family: 'Aeonik', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--azul-900);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--azul-200);
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--branco);
+}
+
+p,
+a {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1rem;
+  color: var(--branco);
+}
+
+li {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #f6f6f6;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  appearance: none;
+  border: none;
+  color: inherit;
+  background: none;
 }
 
 summary {
-  margin: 0;
-  font-family: 'Amiko', sans-serif;
   font-weight: 400;
-  font-style: normal;
   font-size: 1.25rem;
   color: #b8d3ef;
 }
-
-/* #region --- RESPONSIVIDADE */
-
-@media (max-width: 1366px) {
-  h1 {
-    font-size: 3.5rem;
-    line-height: 60px;
-  }
-}
-
-@media (max-width: 1280px) {
-  header {
-    nav {
-      display: flex;
-      padding-inline: 2rem;
-      justify-content: space-between;
-      align-items: center;
-
-      ul {
-        display: flex;
-        gap: 1.5rem;
-
-        li > a {
-          font-size: 0.875rem;
-        }
-      }
-    }
-  }
-
-  h1 {
-    font-size: 3.5rem;
-    line-height: 60px;
-  }
-
-  summary {
-    font-size: 1.1rem;
-  }
-}
-
-@media (max-width: 1024px) {
-  header {
-    position: absolute;
-    padding-block: 1rem;
-    nav > ul {
-      display: none;
-    }
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    line-height: 45px;
-  }
-
-  h2 {
-    font-weight: 400;
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-weight: 700;
-    font-size: 1.2rem;
-  }
-
-  p,
-  a {
-    font-size: 0.875rem;
-  }
-
-  summary {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
-  header > nav {
-    padding-inline: 1rem;
-    ul {
-      display: none;
-    }
-
-    a > img {
-      width: 120px;
-    }
-  }
-
-  h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
-  h2 {
-    font-weight: 400;
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-weight: 700;
-    font-size: 1rem;
-  }
-
-  p,
-  a,
-  li {
-    font-size: 0.75rem;
-  }
-
-  summary {
-    font-size: 0.875rem;
-  }
-
-  footer {
-    height: 150px;
-
-    p {
-      padding: 2rem;
-    }
-
-    img {
-      height: 60px;
-    }
-  }
-}
-
-/* #endregion */

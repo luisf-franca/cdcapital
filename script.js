@@ -1,15 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const detailsElements = document.querySelectorAll('details');
+import initAnimaScroll from './js/anima-scroll.js';
+import initAccordion from './js/accordion.js';
 
-  detailsElements.forEach((details) => {
-    details.addEventListener('toggle', function () {
-      if (this.open) {
-        detailsElements.forEach((otherDetails) => {
-          if (otherDetails !== details && otherDetails.open) {
-            otherDetails.open = false;
-          }
-        });
-      }
-    });
-  });
-});
+initAnimaScroll();
+initAccordion();

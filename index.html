@@ -3,127 +3,157 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="language" content="pt-BR">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CD Capital</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="/styles/global.css">
+    <meta name="theme-color" content="#14161D" />
+
+    <title>CD Capital - Antecipação de Crédito</title>
+    <meta name="description"
+        content="Antecipe seus recebíveis com CD Capital e melhore o fluxo de caixa da sua empresa com soluções rápidas, seguras e personalizadas para atender suas necessidades financeiras. Obtenha capital de forma eficiente e impulsione seu negócio com nossa expertise em crédito." />
+    <meta name="keywords"
+        content="CD Capital, Antecipação de recebíveis, fluxo de caixa, soluções financeiras, crédito empresarial, capital rápido, segurança financeira, personalização financeira, melhorar fluxo de caixa, antecipar recebíveis, crédito seguro, eficiência financeira, impulsionar negócios, expertise em crédito" />
+
+    <link rel="canonical" href="https://www.cdcapital.com/">
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="container">
             <a href="#initial">
                 <img src="/assets/cdcapital-logo.svg">
             </a>
-            <ul class="header">
+            <menu class="header">
                 <li><a href="#quem-somos">Quem Somos</a></li>
                 <li><a href="#servicos">Serviços</a></li>
                 <li><a href="#faq">Dúvidas Frequentes</a></li>
                 <li><a href="#fale-conosco">Fale Conosco</a></li>
-            </ul>
-            <button class="btn1">FAÇA UMA SIMULAÇÃO</button>
+            </menu>
+            <a href="https://api.whatsapp.com/send?phone=5531997966669" target="_blank" class="btn1">FAÇA UMA
+                SIMULAÇÃO</a>
         </nav>
     </header>
 
     <main>
-        <section id="initial">
-            <div>
-                <h1>O futuro da sua empresa é agora</h1>
-                <div>
-                    <button class="btn1"> ANTECIPE SEU CRÉDITO</button>
+        <section id="initial" data-anime="scroll">
+            <div class="container">
+                <h1 data-inicio="a">O futuro da sua empresa é agora</h1>
+                <div data-inicio="b">
+                    <button class="btn1">ANTECIPE SEU CRÉDITO</button>
                     <button class="btn2">SAIBA MAIS</button>
                 </div>
             </div>
 
-            <p><img src="/assets/icons/Hourglass.svg" alt="Hourglass">Soluções rápidas</p>
-            <p><img src="/assets/icons/Locker.svg" alt="Locker">Processo seguro</p>
+            <span data-inicio="c"><img src="/assets/icons/Hourglass.svg" alt="Ícone de ampulheta">Soluções
+                rápidas</span>
+            <span data-inicio="d"><img src="/assets/icons/Locker.svg" alt="Ícone de cadeado">Processo seguro</span>
         </section>
 
-        <section id="quem-somos" class="container">
+        <section id="quem-somos" class="container" data-anime="scroll">
             <div>
                 <picture>
-
-                    <img src="/assets/colleagues-working-together-project.jpeg" alt="colleagues-working-together-project">
+                    <img src="/assets/quem-somos-desktop.webp" alt="colleagues-working-together-project">
                 </picture>
 
-
                 <div>
-                    <h2>Quem somos?</h2>
+                    <h2>Sobre nós</h2>
                     <div>
-                        <p>Na CD Capital, estamos comprometidos em transformar a gestão financeira das empresas, oferecendo soluções que impulsionam o crescimento em um processo ágil e digital.</p>
-                        <p>Especializados em antecipação de recebíveis e empréstimos para pessoas jurídicas, buscamos auxiliar negócios que buscam melhorar seu fluxo de caixa e expandir suas operações com segurança e eficiência.</p>
+                        <p>Na CD Capital, estamos comprometidos em transformar a gestão financeira das empresas,
+                            oferecendo soluções que impulsionam o crescimento em um processo ágil e digital.</p>
+                        <p>Especializados em antecipação de recebíveis e empréstimos para pessoas jurídicas, buscamos
+                            auxiliar negócios que buscam melhorar seu fluxo de caixa e expandir suas operações com
+                            segurança e eficiência.</p>
                     </div>
-                    <button class="btn2">
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" d="M17.0036 2.90667C15.1321 1.03333 12.6439 0.000833333 9.99333 0C4.53129 0 0.0858262 4.445 0.0833264 9.91C0.0824931 11.6567 0.539122 13.3617 1.40655 14.865L0 20L5.2529 18.6217C6.70028 19.4117 8.33014 19.8275 9.98833 19.8283H9.9925C15.4537 19.8283 19.9 15.3825 19.9025 9.9175C19.9042 7.27 18.8743 4.77917 17.0036 2.90667ZM9.99333 18.1542H9.99C8.51179 18.1542 7.06275 17.7567 5.79785 17.0058L5.49704 16.8275L2.3798 17.645L3.21223 14.605L3.01642 14.2933C2.19148 12.9817 1.75652 11.4658 1.75735 9.91C1.75902 5.36833 5.45455 1.67333 9.9975 1.67333C12.1973 1.67333 14.2655 2.53167 15.8204 4.08833C17.3752 5.64583 18.231 7.715 18.2302 9.91583C18.2276 14.4592 14.533 18.1542 9.99333 18.1542ZM14.5113 11.985C14.2638 11.8608 13.0464 11.2617 12.8189 11.1792C12.5923 11.0967 12.4273 11.055 12.2615 11.3025C12.0957 11.55 11.6224 12.1083 11.4774 12.2742C11.3332 12.4392 11.1882 12.46 10.9408 12.3358C10.6933 12.2117 9.89501 11.9508 8.94925 11.1067C8.21348 10.45 7.71602 9.63917 7.57187 9.39083C7.42772 9.1425 7.55687 9.00917 7.68019 8.88583C7.79185 8.775 7.92767 8.59667 8.05183 8.45167C8.17682 8.30833 8.21765 8.205 8.30098 8.03917C8.38347 7.87417 8.34264 7.72917 8.28014 7.605C8.21765 7.48167 7.72269 6.2625 7.51687 5.76667C7.31606 5.28333 7.11191 5.34917 6.95942 5.34167C6.81527 5.33417 6.65028 5.33333 6.48446 5.33333C6.31947 5.33333 6.05116 5.395 5.82452 5.64333C5.59787 5.89167 4.95792 6.49083 4.95792 7.70917C4.95792 8.92833 5.84535 10.1058 5.96867 10.2708C6.09199 10.4358 7.71436 12.9375 10.1983 14.01C10.7891 14.265 11.2507 14.4175 11.6099 14.5317C12.2032 14.72 12.7431 14.6933 13.1697 14.63C13.6455 14.5592 14.6346 14.0308 14.8413 13.4525C15.0479 12.8742 15.0479 12.3775 14.9854 12.275C14.9238 12.1708 14.7588 12.1092 14.5113 11.985Z" />
+                    <a href="/" target="_blank" class="btn2">
+                        <svg width="18" height="18" viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M17.0036 2.90667C15.1321 1.03333 12.6439 0.000833333 9.99333 0C4.53129 0 0.0858262 4.445 0.0833264 9.91C0.0824931 11.6567 0.539122 13.3617 1.40655 14.865L0 20L5.2529 18.6217C6.70028 19.4117 8.33014 19.8275 9.98833 19.8283H9.9925C15.4537 19.8283 19.9 15.3825 19.9025 9.9175C19.9042 7.27 18.8743 4.77917 17.0036 2.90667ZM9.99333 18.1542H9.99C8.51179 18.1542 7.06275 17.7567 5.79785 17.0058L5.49704 16.8275L2.3798 17.645L3.21223 14.605L3.01642 14.2933C2.19148 12.9817 1.75652 11.4658 1.75735 9.91C1.75902 5.36833 5.45455 1.67333 9.9975 1.67333C12.1973 1.67333 14.2655 2.53167 15.8204 4.08833C17.3752 5.64583 18.231 7.715 18.2302 9.91583C18.2276 14.4592 14.533 18.1542 9.99333 18.1542ZM14.5113 11.985C14.2638 11.8608 13.0464 11.2617 12.8189 11.1792C12.5923 11.0967 12.4273 11.055 12.2615 11.3025C12.0957 11.55 11.6224 12.1083 11.4774 12.2742C11.3332 12.4392 11.1882 12.46 10.9408 12.3358C10.6933 12.2117 9.89501 11.9508 8.94925 11.1067C8.21348 10.45 7.71602 9.63917 7.57187 9.39083C7.42772 9.1425 7.55687 9.00917 7.68019 8.88583C7.79185 8.775 7.92767 8.59667 8.05183 8.45167C8.17682 8.30833 8.21765 8.205 8.30098 8.03917C8.38347 7.87417 8.34264 7.72917 8.28014 7.605C8.21765 7.48167 7.72269 6.2625 7.51687 5.76667C7.31606 5.28333 7.11191 5.34917 6.95942 5.34167C6.81527 5.33417 6.65028 5.33333 6.48446 5.33333C6.31947 5.33333 6.05116 5.395 5.82452 5.64333C5.59787 5.89167 4.95792 6.49083 4.95792 7.70917C4.95792 8.92833 5.84535 10.1058 5.96867 10.2708C6.09199 10.4358 7.71436 12.9375 10.1983 14.01C10.7891 14.265 11.2507 14.4175 11.6099 14.5317C12.2032 14.72 12.7431 14.6933 13.1697 14.63C13.6455 14.5592 14.6346 14.0308 14.8413 13.4525C15.0479 12.8742 15.0479 12.3775 14.9854 12.275C14.9238 12.1708 14.7588 12.1092 14.5113 11.985Z" />
                         </svg>
-                        Chame no Whatsapp
-                    </button>
-
+                        <span>
+                            Chame no Whatsapp
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <section id="servicos" class="container">
+        <section id="servicos" class="container" data-anime="scroll">
             <div>
                 <h2>Quais são nossos serviços?</h2>
-                <p>Com o serviço de <span>antecipação de recebíveis</span>, você transforma suas vendas à prazo em capital imediato, com processos rápidos e simplificados.</p>
-                <p>Também oferecemos <span>empréstimos para pessoas jurídicas</span>, garantindo que você tenha os recursos necessários para investir, modernizar e crescer seu negócio.</p>
+                <p>Com o serviço de <span>antecipação de recebíveis</span>, você transforma suas vendas à prazo em
+                    capital imediato, com processos rápidos e simplificados.</p>
+                <p>Também oferecemos <span>empréstimos para pessoas jurídicas</span>, garantindo que você tenha os
+                    recursos necessários para investir, modernizar e crescer seu negócio.</p>
             </div>
             <picture>
-                <img src="/assets/dark-haired-man-is-working-table-office-he-wears-blue-shirt-with-black-jacket-he-is-taking-cup-coffee-smiling-camera.jpeg" alt="dark-haired-man-is-working-table-office-he-wears-blue-shirt-with-black-jacket-he-is-taking-cup-coffee-smiling-camera" />
+                <img src="/assets/dark-haired-man-is-working-table-office-he-wears-blue-shirt-with-black-jacket-he-is-taking-cup-coffee-smiling-camera.jpeg"
+                    alt="dark-haired-man-is-working-table-office-he-wears-blue-shirt-with-black-jacket-he-is-taking-cup-coffee-smiling-camera" />
             </picture>
         </section>
 
-        <section id="timeline">
+        <section id="timeline" class="container" data-anime="scroll">
             <div>
                 <img src="assets/icons/HandWaving.svg" alt="HandWaving">
                 <div>
                     <h3>Conheça a CD Capital</h3>
-                    <p>Somos especialistas financeiros e ajudamos sua empresa a transformar vendas futuras em capital imediato. Também oferecemos serviços de empréstimos para Pessoas Jurídicas, para impulsionar as suas ideias e negócios.</p>
+                    <p>Somos especialistas financeiros e ajudamos sua empresa a transformar vendas futuras em capital
+                        imediato. Também oferecemos serviços de empréstimos para Pessoas Jurídicas, para impulsionar as
+                        suas ideias e negócios.</p>
                 </div>
             </div>
             <div>
                 <img src="assets/icons/ChatCircleDots.svg" alt="ChatCircleDots">
                 <div>
                     <h3>Converse com a gente</h3>
-                    <p>Estamos prontos para entender as necessidades da sua empresa. Fale conosco e descubra como podemos ajudar a otimizar seu fluxo de caixa e fortalecer sua operação financeira.</p>
+                    <p>Estamos prontos para entender as necessidades da sua empresa. Fale conosco e descubra como
+                        podemos ajudar a otimizar seu fluxo de caixa e fortalecer sua operação financeira.</p>
                 </div>
             </div>
             <div>
                 <img src="assets/icons/Percent.svg" alt="Percent">
                 <div>
                     <h3>Simule nosso serviço</h3>
-                    <p>Quer saber como a antecipação pode beneficiar sua empresa? Peça uma simulação e veja o quanto você pode receber de forma rápida e prática.</p>
+                    <p>Quer saber como a antecipação pode beneficiar sua empresa? Peça uma simulação e veja o quanto
+                        você pode receber de forma rápida e prática.</p>
                 </div>
             </div>
             <div>
                 <img src="assets/icons/CheckCircle.svg" alt="CheckCircle">
                 <div>
                     <h3>Aprovação sem demora</h3>
-                    <p>Na CD Capital, valorizamos seu tempo. Nosso processo de aprovação é rápido e descomplicado, permitindo que você tenha acesso ao capital necessário sem burocracia.</p>
+                    <p>Na CD Capital, valorizamos seu tempo. Nosso processo de aprovação é rápido e descomplicado,
+                        permitindo que você tenha acesso ao capital necessário sem burocracia.</p>
                 </div>
             </div>
             <div>
                 <img src="assets/icons/Star.svg" alt="Star">
                 <div>
                     <h3>Seu capital de giro em mãos</h3>
-                    <p>Transforme seus recebíveis em liquidez imediata e invista no crescimento do seu negócio hoje mesmo!</p>
+                    <p>Transforme seus recebíveis em liquidez imediata e invista no crescimento do seu negócio hoje
+                        mesmo!</p>
                 </div>
             </div>
         </section>
 
-        <section id="faq" class="container">
+        <section id="faq" class="container" data-anime="scroll">
             <div>
                 <h2>Dúvidas? A gente responde!</h2>
-                <p>Está com dúvidas sobre como podemos beneficiar seu negócio? Estamos aqui para ajudar! Ao lado, separamos as perguntas mais frequentes. Explore e descubra como a CD Capital pode ser a solução financeira que sua empresa precisa.</p>
-                <button class="btn1">CONTRATE AGORA</button>
+                <p>Está com dúvidas sobre como podemos beneficiar seu negócio? Estamos aqui para ajudar! Ao lado,
+                    separamos as perguntas mais frequentes. Explore e descubra como a CD Capital pode ser a solução
+                    financeira que sua empresa precisa.</p>
+                <a href="/" target="_blank" class="btn1">CONTRATE AGORA</a>
             </div>
 
             <div>
                 <details>
                     <summary>O que é antecipação de recebíveis?</summary>
-                    <p>É um serviço financeiro que permite à sua empresa transformar vendas a prazo em capital imediato. Nós adiantamos o valor das suas vendas, proporcionando liquidez rápida para que você possa investir, pagar despesas ou aproveitar oportunidades de crescimento sem demora. É uma solução eficiente para otimizar o fluxo de caixa e garantir a estabilidade financeira do seu negócio.</p>
+                    <p>É um serviço financeiro que permite à sua empresa transformar vendas a prazo em capital imediato.
+                        Nós adiantamos o valor das suas vendas, proporcionando liquidez rápida para que você possa
+                        investir, pagar despesas ou aproveitar oportunidades de crescimento sem demora. É uma solução
+                        eficiente para otimizar o fluxo de caixa e garantir a estabilidade financeira do seu negócio.
+                    </p>
                 </details>
 
                 <details>
@@ -148,14 +178,16 @@
             </div>
         </section>
 
-        <section id="fale-conosco" class="container">
+        <section id="fale-conosco" class="container" data-anime="scroll">
             <article>
                 <div>
                     <h2>Dê mais fôlego para o seu negócio</h2>
-                    <p>Entre em contato conosco hoje mesmo e descubra como podemos ajudar a <span>transformar o futuro</span> da sua empresa!</p>
+                    <p>Entre em contato conosco hoje mesmo e descubra como podemos ajudar a <span>transformar o
+                            futuro</span> da sua empresa!</p>
                     <button class="btn2">
-                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="currentColor" d="M17.0036 2.90667C15.1321 1.03333 12.6439 0.000833333 9.99333 0C4.53129 0 0.0858262 4.445 0.0833264 9.91C0.0824931 11.6567 0.539122 13.3617 1.40655 14.865L0 20L5.2529 18.6217C6.70028 19.4117 8.33014 19.8275 9.98833 19.8283H9.9925C15.4537 19.8283 19.9 15.3825 19.9025 9.9175C19.9042 7.27 18.8743 4.77917 17.0036 2.90667ZM9.99333 18.1542H9.99C8.51179 18.1542 7.06275 17.7567 5.79785 17.0058L5.49704 16.8275L2.3798 17.645L3.21223 14.605L3.01642 14.2933C2.19148 12.9817 1.75652 11.4658 1.75735 9.91C1.75902 5.36833 5.45455 1.67333 9.9975 1.67333C12.1973 1.67333 14.2655 2.53167 15.8204 4.08833C17.3752 5.64583 18.231 7.715 18.2302 9.91583C18.2276 14.4592 14.533 18.1542 9.99333 18.1542ZM14.5113 11.985C14.2638 11.8608 13.0464 11.2617 12.8189 11.1792C12.5923 11.0967 12.4273 11.055 12.2615 11.3025C12.0957 11.55 11.6224 12.1083 11.4774 12.2742C11.3332 12.4392 11.1882 12.46 10.9408 12.3358C10.6933 12.2117 9.89501 11.9508 8.94925 11.1067C8.21348 10.45 7.71602 9.63917 7.57187 9.39083C7.42772 9.1425 7.55687 9.00917 7.68019 8.88583C7.79185 8.775 7.92767 8.59667 8.05183 8.45167C8.17682 8.30833 8.21765 8.205 8.30098 8.03917C8.38347 7.87417 8.34264 7.72917 8.28014 7.605C8.21765 7.48167 7.72269 6.2625 7.51687 5.76667C7.31606 5.28333 7.11191 5.34917 6.95942 5.34167C6.81527 5.33417 6.65028 5.33333 6.48446 5.33333C6.31947 5.33333 6.05116 5.395 5.82452 5.64333C5.59787 5.89167 4.95792 6.49083 4.95792 7.70917C4.95792 8.92833 5.84535 10.1058 5.96867 10.2708C6.09199 10.4358 7.71436 12.9375 10.1983 14.01C10.7891 14.265 11.2507 14.4175 11.6099 14.5317C12.2032 14.72 12.7431 14.6933 13.1697 14.63C13.6455 14.5592 14.6346 14.0308 14.8413 13.4525C15.0479 12.8742 15.0479 12.3775 14.9854 12.275C14.9238 12.1708 14.7588 12.1092 14.5113 11.985Z" />
+                        <svg width="18" height="18" viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M17.0036 2.90667C15.1321 1.03333 12.6439 0.000833333 9.99333 0C4.53129 0 0.0858262 4.445 0.0833264 9.91C0.0824931 11.6567 0.539122 13.3617 1.40655 14.865L0 20L5.2529 18.6217C6.70028 19.4117 8.33014 19.8275 9.98833 19.8283H9.9925C15.4537 19.8283 19.9 15.3825 19.9025 9.9175C19.9042 7.27 18.8743 4.77917 17.0036 2.90667ZM9.99333 18.1542H9.99C8.51179 18.1542 7.06275 17.7567 5.79785 17.0058L5.49704 16.8275L2.3798 17.645L3.21223 14.605L3.01642 14.2933C2.19148 12.9817 1.75652 11.4658 1.75735 9.91C1.75902 5.36833 5.45455 1.67333 9.9975 1.67333C12.1973 1.67333 14.2655 2.53167 15.8204 4.08833C17.3752 5.64583 18.231 7.715 18.2302 9.91583C18.2276 14.4592 14.533 18.1542 9.99333 18.1542ZM14.5113 11.985C14.2638 11.8608 13.0464 11.2617 12.8189 11.1792C12.5923 11.0967 12.4273 11.055 12.2615 11.3025C12.0957 11.55 11.6224 12.1083 11.4774 12.2742C11.3332 12.4392 11.1882 12.46 10.9408 12.3358C10.6933 12.2117 9.89501 11.9508 8.94925 11.1067C8.21348 10.45 7.71602 9.63917 7.57187 9.39083C7.42772 9.1425 7.55687 9.00917 7.68019 8.88583C7.79185 8.775 7.92767 8.59667 8.05183 8.45167C8.17682 8.30833 8.21765 8.205 8.30098 8.03917C8.38347 7.87417 8.34264 7.72917 8.28014 7.605C8.21765 7.48167 7.72269 6.2625 7.51687 5.76667C7.31606 5.28333 7.11191 5.34917 6.95942 5.34167C6.81527 5.33417 6.65028 5.33333 6.48446 5.33333C6.31947 5.33333 6.05116 5.395 5.82452 5.64333C5.59787 5.89167 4.95792 6.49083 4.95792 7.70917C4.95792 8.92833 5.84535 10.1058 5.96867 10.2708C6.09199 10.4358 7.71436 12.9375 10.1983 14.01C10.7891 14.265 11.2507 14.4175 11.6099 14.5317C12.2032 14.72 12.7431 14.6933 13.1697 14.63C13.6455 14.5592 14.6346 14.0308 14.8413 13.4525C15.0479 12.8742 15.0479 12.3775 14.9854 12.275C14.9238 12.1708 14.7588 12.1092 14.5113 11.985Z" />
                         </svg>
                         Chame no Whatsapp
                     </button>
@@ -167,7 +199,7 @@
 
     <footer>
         <img src="/assets/vertical-logo.svg">
-        <p>CD CAPITAL 2024 - Todos os Direitos Reservados</p>
+        <p>CD CAPITAL<sup>&reg;</sup> 2024 - Todos os Direitos Reservados</p>
     </footer>
 
 </body>
