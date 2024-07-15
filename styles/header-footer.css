@@ -63,6 +63,10 @@ img {
 }
 
 @media (max-width: 1024px) {
+  header {
+    background: linear-gradient(180deg, #14161d 0%, #14161d99 100%);
+  }
+
   header > nav > menu {
     display: none;
   }

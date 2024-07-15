@@ -60,6 +60,11 @@
 
     div {
       padding: 1rem;
+
+      & button {
+        width: 100%;
+        justify-content: center;
+      }
     }
   }
 }

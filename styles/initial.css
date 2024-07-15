@@ -116,6 +116,17 @@
 @media (max-width: 768px) {
   #inicial {
     background-image: url('../assets/home-mobile.webp');
+
+    & > div {
+      & > h1 {
+        text-wrap: balance;
+      }
+      
+      & > div {
+        gap: 0.875rem;
+      }
+    }
+    
   }
 
   #initial > span {
