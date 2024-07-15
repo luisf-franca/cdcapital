@@ -114,9 +114,7 @@
 }
 
 @media (max-width: 768px) {
-  #inicial {
-    background-image: url('../assets/home-mobile.webp');
-
+  #initial {
     & > div {
       & > h1 {
         text-wrap: balance;
