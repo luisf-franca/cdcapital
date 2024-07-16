@@ -2,7 +2,7 @@
 
 section[data-anime="scroll"] {
     opacity: 0;
-    transition: 1s ease-in-out;
+    transition: 1s ease-in;
     transform: translateY(-40px);
 }
 
